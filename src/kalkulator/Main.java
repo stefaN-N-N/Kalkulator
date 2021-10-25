@@ -9,6 +9,9 @@ public class Main {
 			Scanner s1 = new Scanner(System.in);
 			String a;
 			a = s1.nextLine();
+			if(a.equals("")) {
+				continue;
+			}
 			if(a.equals("exit") || a.equals("kraj")) {
 				break;
 			}
