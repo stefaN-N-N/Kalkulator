@@ -21,7 +21,13 @@ public class Main {
 				continue;
 				
 			}
-			
+			int x = Integer.parseInt(b[0]); //uzimanje prvog u listi i konvertovanje u int
+			int y = Integer.parseInt(b[2]);
+			if(b[1].equals("+")) {
+				System.out.println(x + y);
+			} else {
+				System.out.println("Unsupported operation.");
+			}
 			
 		}
 
