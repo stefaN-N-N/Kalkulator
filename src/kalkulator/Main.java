@@ -29,8 +29,13 @@ public class Main {
 			else if(b[1].equals("-")) {
 				substraction(x, y);
 			}
+
 			else if(b[1].equals("*")) {
 				multiplication(x, y);
+				}
+			else if(b[1].equals("/") || b[1].equals(":")) {
+				division(x, y);
+
 			}
 			else  {
 				System.out.println("Unsupported operation.");
@@ -47,8 +52,15 @@ public class Main {
 	
 	public static void substraction(int a, int b) {
 		System.out.println(a - b);
+
 	}
 	public static void multiplication(int a, int b) {
 		System.out.println(a * b);
+
+	} 
+	
+	public static void division(int a, int b) {
+		System.out.println(a / b);	
+
 	}
 }
