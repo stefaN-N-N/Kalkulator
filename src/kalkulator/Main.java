@@ -21,10 +21,21 @@ public class Main {
 				continue;
 				
 			}
-			
+			int x = Integer.parseInt(b[0]); //uzimanje prvog u listi i konvertovanje u int
+			int y = Integer.parseInt(b[2]);
+			if(b[1].equals("+")) {
+				addition(x, y);
+			} else {
+				System.out.println("Unsupported operation.");
+			}
 			
 		}
 
+	}
+	// staticka f-ja moze da se pozove iz bilo
+	// kog dela projekta
+	public static void addition(int a, int b) {
+		System.out.println(a + b);
 	}
 
 }
